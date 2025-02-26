@@ -37,35 +37,35 @@
 
 ## 3. <a name="methods">Important Methods</a>
   
-**isDisplayed()**: Verifies if a specified element is visible on a page.  
-**isEnabled()**: Verifies if a specified element is toggled on for interaction on a page.  
-**isSelected()**: Verifies if a checkbox or radio buttion has been chosen by the user.  
+`isDisplayed()`: Verifies if a specified element is visible on a page.  
+`isEnabled()`: Verifies if a specified element is toggled on for interaction on a page.  
+`isSelected()`: Verifies if a checkbox or radio buttion has been chosen by the user.  
   
-**findElement()**: Retrieves one specified WebElement.  
-**findElements()**: Returns a list from the specified WebElements (or an empty list, should none of the WebElements be found).  
-**getText():** Returns the displayed inner text of a WebElement.  
-**getAttribute():** Returns the value of a specified WebElement attribute.  
-**doubleClick():** Executes a double-click on a WebElement, using the Actions class.  
+`findElement()`: Retrieves one specified WebElement.  
+`findElements()`: Returns a list from the specified WebElements (or an empty list, should none of the WebElements be found).  
+`getText()`: Returns the displayed inner text of a WebElement.  
+`getAttribute()`: Returns the value of a specified WebElement attribute.  
+`doubleClick()`: Executes a double-click on a WebElement, using the Actions class.  
   
-**driver.manage().window().maximize():** Sets the browser window to full size.  
-**driver.close():** Closes the presently open browser window.  
-**driver.quit():** Closes every browser window that WebDriver has open.  
+`driver.manage().window().maximize()`: Sets the browser window to full size.  
+`driver.close()`: Closes the presently open browser window.  
+`driver.quit()`: Closes every browser window that WebDriver has open.  
   
-**getWindowHandles():** Retrives all window handles.  
-**switchTo().window():** Handles and moves between browser windows/tabs.  
-**switchTo().frame():** Handles and moves between frames (including iframes).  
+`getWindowHandles()`: Retrives all window handles.  
+`switchTo().window()`: Handles and moves between browser windows/tabs.  
+`switchTo().frame()`: Handles and moves between frames (including iframes).  
   
-**navigate().to():** Moves to a specified web address.  
-**get():** Navigates to a specified web address *and* waits for the page to load in its entirety.  
+`navigate().to()`: Moves to a specified web address.  
+`get()`: Navigates to a specified web address *and* waits for the page to load in its entirety.  
   
-**sendKeys():** Inputs a file's path into an upload file, simulating a file upload.  
+`sendKeys()`: Inputs a file's path into an upload file, simulating a file upload.  
   
-**navigate().refresh():** Refreshes a browser window/page.  
-**driver.get(driver.getCurrentUrl()):** Reloads the current URL *and* refreshes the browser window.  
+`navigate().refresh()`: Refreshes a browser window/page.  
+`driver.get(driver.getCurrentUrl())`: Reloads the current URL *and* refreshes the browser window.  
   
 ## 4. <a name="waits">Implicit and Explicit Waits</a>
   
-* **Implicit Wait:** Applies to each element. Sets a default wait time if an element is not found.
-* **Explicit Wait:** Applies to specified elements/conditions.
+* **Implicit Wait:** Applies to *each* element. Sets a default wait time if an element is not found.
+* **Explicit Wait:** Applies to *specified* elements/conditions.
   + **Fluent Wait:** A unique explicit wait that sets conditions and polling frequencies for waiting (not relying upon default wait values).
   + **WebDriverWait**: A unique explicit wait that waits for a specified element or condition before throwing an exception.
