@@ -51,9 +51,10 @@
 `driver.close()`: Closes the presently open browser window.  
 `driver.quit()`: Closes every browser window that WebDriver has open.  
   
-`getWindowHandles()`: Retrives all window handles.  
+`getWindowHandles()`: Retrives all window handles. (A *window handle* is a unique ID belonging to an individual window. A *window title* is a name displayed by a window's title bar.)
 `switchTo().window()`: Handles and moves between browser windows/tabs.  
 `switchTo().frame()`: Handles and moves between frames (including iframes).  
+`switchTo().alert()`: Handles JavaScript prompts, alerts, and confirmation boxes. (This method handles *JavaScript* pop-ups. Selenium does not handle windows-based popups unless a utility such as Robot class or AutoIt is implemented.)
   
 `navigate().to()`: Moves to a specified web address.  
 `get()`: Navigates to a specified web address *and* waits for the page to load in its entirety.  
