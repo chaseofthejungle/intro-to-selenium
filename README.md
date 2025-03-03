@@ -77,28 +77,29 @@
   
 ## 5. <a name="misc">Miscellaneous</a>
   
-* WebElements can be located by Selenium through a variety of mechanisms, such as: XPath, Name, Tag Name, Class Name, ID, Link Text (or Partial Link Text), and CSS Selector.
-+ While WebDriver is utilized for local browser automation, *Remote WebDriver* can be used to automate a web browser on a remote server (if they are running Selenium Grid).
-* To execute tests in multiple browsers while using Selenium, use the relevant WebDriver interfaces (e.g., ChromeDriver, FirefoxDriver). Cross-browser testing can also be accomplished using tools (e.g., TestNG) that accept browser-based parameters.
+* WebElements can be located by Selenium through a variety of locators, such as: XPath, Name, Tag Name, Class Name, ID, Link Text (or Partial Link Text), and CSS Selector.
+* While WebDriver is utilized for local browser automation, *Remote WebDriver* can be used to automate a web browser on a remote server (if it is running Selenium Grid).
+* To execute tests in multiple browsers while using Selenium, use the relevant WebDriver interfaces (e.g., ChromeDriver, FirefoxDriver).
+  + Cross-browser testing can also be accomplished using tools (e.g., TestNG) that accept browser-based parameters.
 * The testing framework *TestNG* integrates with Selenium to manage test cases, execute parallel tests, handle assertions, and generate reports.
 * Some test automation alternatives to Selenium include: Cucumber, Cypress, NightwatchJS, Playwright, Puppeteer, and TestCafe.
   + *QTP/UFT* is another alternative, but Selenium offers open-source, community, cross-platform and multiple programming language support that QTP/UFT does not immediately provide.
 * If a browser is run as a headless browser (e.g., PhantomJS, Chrome headless) rather than in standard mode, it does not use a graphical user interface (GUI).
-* Screenshots can be captured by Sleneium if using the TakesScreenshot interface in Selenium WebDriver.
+* Screenshots can be captured by Selenium if using the TakesScreenshot interface in Selenium WebDriver.
 * The *XPath* query language selects nodes from HTML and XML documents. It utilizes absolute (starting from root nodes, using full paths) and relative (starting from the middle of the Document Object Model's structure) XPaths.
 * Page Object Model (POM) is a design pattern in which an object repository for web elements is created. This enables tests to have increased readability and maintainability.
   + A *Page Factory* is a POM implementation that provides annotations (e.g., @FindBy) to readily initialize web elements.
 * Examples of common exceptions in Selenium include...
-  + NoSuchElementException
-  + NoSuchFrameException
-  + NoSuchSessionException
-  + NoSuchWindowException
-  + NoAlertPresentException
-  + InvalidSelectorException
-  + ElementNotSelectableException
-  + ElementNotVisibleException
-  + StaleElementReferenceException
-  + TimeoutException
+  + **NoSuchElementException**: Thrown if a specified WebElement is not found (using the provided locator) by WebDriver.
+  + **NoSuchFrameException**: Thrown if WebDriver cannot find a specified frame (or iframe) via a specified frame identifier.
+  + **NoSuchSessionException**: Thrown if a browser session has become inactive.
+  + **NoSuchWindowException**: Thrown if WebDriver cannot find a browser window (or tab) that it needs to interface with.
+  + **NoAlertPresentException**: Thrown if WebDriver attempts interaction with an alert that is not available (or has already been closed in the browser).
+  + **InvalidSelectorException**: Can be thrown by WebDriver due to unsupported or overly complex expressions, invalid XPath and/or CSS expressions, and selector syntax and type errors. 
+  + **ElementNotSelectableException**: Thrown by WebDriver if an element is found within the DOM but cannot be selected and have actions performed upon it.
+  + **ElementNotVisibleException**: Thrown by WebDriver if a script attempts to interface with a WebElement that the user would be unable to interact with due to it being hidden (invisible).
+  + **StaleElementReferenceException**: Thrown if WebDriver attempts interaction with an element that is not associated with a DOM element.
+  + **TimeoutException**: Thrown by WebDriver if a command does not finish running within its allotted time.
 * The Actions class enables keyboard and mouse event simulation (e.g., clicking, clicking and holding, pressing the up or down keys).
   + *For example:* The Actions class can be used to call the clickAndHold() method on a WebElement.
 * *JavascriptExecute* enables JavaScript code to be ran within a web browser (such as for scrolling, or to handle dynamic events).
