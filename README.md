@@ -8,6 +8,7 @@
 2. [Advantages/Limitations](#advslims)
 3. [Important Methods](#methods)
 4. [Implicit and Explicit Waits](#waits)
+5. [Miscellaneous](#misc)
   
 <hr />
   
@@ -70,3 +71,21 @@
 * **Explicit Wait:** Applies to *specified* elements/conditions.
   + **Fluent Wait:** A unique explicit wait that sets conditions and polling frequencies for waiting (not relying upon default wait values).
   + **WebDriverWait**: A unique explicit wait that waits for a specified element or condition before throwing an exception.
+  
+## 5. <a name="misc">Miscellaneous</a>
+  
+* If a browser is run in a headless browser (e.g., PhantomJS, Chrome headless) rather than in standard mode, it does not use a graphical user interface (GUI).
+* Screenshots can be captured by Sleneium if using the TakesScreenshot interface in Selenium WebDriver.
+* Page Object Model (POM) is a design pattern in which an object repository for web elements is created. This enables tests to have increased readability and maintainability.
+  + A *Page Factory* is a POM implementation that provides annotations (e.g., @FindBy) to readily initialize web elements.
+* Examples of common exceptions in Selenium include...
+  + NoSuchElementException
+  + NoSuchFrameException
+  + NoSuchSessionException
+  + NoSuchWindowException
+  + NoAlertPresentException
+  + InvalidSelectorException
+  + ElementNotSelectableException
+  + ElementNotVisibleException
+  + StaleElementReferenceException
+  + TimeoutException
