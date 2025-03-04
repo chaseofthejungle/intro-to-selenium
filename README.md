@@ -105,3 +105,7 @@
 * *JavascriptExecute* enables JavaScript code to be ran within a web browser (such as for scrolling, or to handle dynamic events).
 * *DesiredCapabilities* can set values for web browser properties (e.g., version, platform, browser name) before initiating a WebDriver session.
   + DesiredCapabilities can configure proxy servers, which can be utilized in testing environments to route traffic through a middle layer.
+  
+<hr />
+  
+TODO: Split 'Miscellaneous' items into various categories.
