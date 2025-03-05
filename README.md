@@ -9,17 +9,16 @@
   + Playwright
   + Puppeteer
   + TestCafe
-
-*QTP/UFT* is another alternative, but Selenium offers open-source, community, cross-platform and multiple programming language support that QTP/UFT does not immediately provide.
+  + QTP/UFT (although Selenium offers open-source, community, cross-platform and multiple programming language support that QTP/UFT does not immediately provide)  
 
 #### Table of Contents
 
 1. [Selenium Components](#components)
 2. [Advantages/Limitations](#advslims)
-3. [Important Methods for WebElements](#methods)
+3. [Interacting with WebElements](#elements)
 4. [Implicit and Explicit Waits](#waits)
 5. [Exception Handling](#exceptions)
-6. [Miscellaneous](#misc)
+6. [Other Classes and Interfaces](#others)
   
 <hr />
   
@@ -31,8 +30,8 @@
 
 **Selenium WebDriver** is a web automation tool that enables cross-browser tests to be executed. It does so without requiring its own unique server: it takes commands and forwards them directly to an instance of the browser, which it initiates. It supports complex scripting and has a wide range of programming language, framework, and browser compatibility.
   
-While WebDriver is utilized for local browser automation, *Remote WebDriver* can be used to automate a web browser on a remote server (if it is running Selenium Grid).
-  
+* While WebDriver is utilized for local browser automation, *Remote WebDriver* can be used to automate a web browser on a remote server (if it is running Selenium Grid).
+
 <hr />
   
 ## 2. <a name="advslims">Advantages/Limitations</a>
@@ -43,6 +42,7 @@ While WebDriver is utilized for local browser automation, *Remote WebDriver* can
 * Support for various platforms/browsers.
 * Seamless integration with various test case management, reporting, CI/CD, and other tools (such as Maven, Jenkins, JUnit, and TestNG).
 * Compatibility with assorted programming languages (such as Java, Python, Ruby, JavaScript, and C#).
+* If a browser is run as a headless browser (e.g., PhantomJS, Chrome headless) rather than in standard mode, it does not use a graphical user interface (GUI).
   
 **Limitations of Selenium include:**
   
@@ -54,9 +54,19 @@ While WebDriver is utilized for local browser automation, *Remote WebDriver* can
   
 <hr />
   
-## 3. <a name="methods">Important Methods for WebElements</a>
+## 3. <a name="elements">Interacting with WebElements</a>
   
 A *WebElement* is a web page element (e.g., input box, button) that Selenium can interface with. WebElements can be located by Selenium through a variety of locators, such as: XPath, Name, Tag Name, Class Name, ID, Link Text (or Partial Link Text), and CSS Selector.
+    
+* The **Actions** class enables keyboard and mouse event simulation (e.g., clicking, clicking and holding, pressing the up or down keys).
+  + *For example:* The Actions class can be used to call the clickAndHold() method on a WebElement.
+* **Page Object Model (POM)** is a design pattern in which an object repository for web elements is created. This enables tests to have increased readability and maintainability.
+  + A *Page Factory* is a POM implementation that provides annotations (e.g., @FindBy) to readily initialize web elements.
+* **XPath**: This query language selects nodes from HTML and XML documents. It utilizes two kinds of XPaths...
+  + Absolute (starting from root nodes, using full paths)
+  + Relative (starting from the middle of the Document Object Model's, or DOM's structure).
+  
+*Important methods for interacting with WebElements include:*
   
 `isDisplayed()`: Verifies if a specified element is visible on a page.  
 `isEnabled()`: Verifies if a specified element is toggled on for interaction on a page.  
@@ -84,7 +94,7 @@ A *WebElement* is a web page element (e.g., input box, button) that Selenium can
   
 `navigate().refresh()`: Refreshes a browser window/page.  
 `driver.get(driver.getCurrentUrl())`: Reloads the current URL *and* refreshes the browser window.  
-  
+    
 <hr />
   
 ## 4. <a name="waits">Implicit and Explicit Waits</a>
@@ -112,22 +122,12 @@ A *WebElement* is a web page element (e.g., input box, button) that Selenium can
   
 <hr />
   
-## 6. <a name="misc">Miscellaneous</a>
+## 6. <a name="others">Other Classes and Interfaces</a>
   
-* To execute tests in multiple browsers while using Selenium, use the relevant WebDriver interfaces (e.g., ChromeDriver, FirefoxDriver).
-  + Cross-browser testing can also be accomplished using tools (e.g., TestNG) that accept browser-based parameters.
-* The testing framework *TestNG* integrates with Selenium to manage test cases, execute parallel tests, handle assertions, and generate reports.
-* If a browser is run as a headless browser (e.g., PhantomJS, Chrome headless) rather than in standard mode, it does not use a graphical user interface (GUI).
-* Screenshots can be captured by Selenium if using the TakesScreenshot interface in Selenium WebDriver.
-* The *XPath* query language selects nodes from HTML and XML documents. It utilizes absolute (starting from root nodes, using full paths) and relative (starting from the middle of the Document Object Model's structure) XPaths.
-* Page Object Model (POM) is a design pattern in which an object repository for web elements is created. This enables tests to have increased readability and maintainability.
-  + A *Page Factory* is a POM implementation that provides annotations (e.g., @FindBy) to readily initialize web elements.
-* The Actions class enables keyboard and mouse event simulation (e.g., clicking, clicking and holding, pressing the up or down keys).
-  + *For example:* The Actions class can be used to call the clickAndHold() method on a WebElement.
-* *JavascriptExecute* enables JavaScript code to be ran within a web browser (such as for scrolling, or to handle dynamic events).
-* *DesiredCapabilities* can set values for web browser properties (e.g., version, platform, browser name) before initiating a WebDriver session.
+* **ChromeDriver** and **FirefoxDriver**: These are examples of WebDriver interfaces that execute Selenium tests in their respective web browsers.
+  + Cross-browser testing can also be accomplished using tools (e.g., TestNG) that accept *browser-based parameters*.
+* **DesiredCapabilities**: This class can set values for web browser properties/keys (e.g., version, platform, browser name) before initiating a WebDriver session.
   + DesiredCapabilities can configure proxy servers, which can be utilized in testing environments to route traffic through a middle layer.
-  
-<hr />
-  
-TODO: Split 'Miscellaneous' items into various categories.
+* **JavascriptExecutor**: This interface enables JavaScript code to be ran within a web browser (such as for scrolling, or to handle dynamic events).
+* **TakesScreenshot**: This WebDriver interface can capture screenshots.
+* **TestNG**: This is a testing framework that integrates with Selenium to manage test cases, execute parallel tests, handle assertions, and generate reports.  
