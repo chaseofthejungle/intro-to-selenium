@@ -1,16 +1,7 @@
 # Intro to Selenium
   
 **Definition/Overview:** Selenium is an open-source automated web app testing tool/library suite that is compatible with various platforms (including all of the popular contemporary web browsers). Its main components include Selenium IDE, Selenium Grid, and Selenium WebDriver. A previous component, Selenium Remote Control/RC, has been deprecated (in favor of Selenium WebDriver).
-
-* Some test automation alternatives to Selenium include:
-  + Cucumber
-  + Cypress
-  + NightwatchJS
-  + Playwright
-  + Puppeteer
-  + TestCafe
-  + QTP/UFT (although Selenium offers open-source, community, cross-platform and multiple programming language support that QTP/UFT does not immediately provide)  
-
+  
 #### Table of Contents
 
 1. [Selenium Components](#components)
@@ -19,6 +10,7 @@
 4. [Implicit and Explicit Waits](#waits)
 5. [Exception Handling](#exceptions)
 6. [Other Classes and Interfaces](#others)
+7. [Test Automation Alternatives](#alternatives)
   
 <hr />
   
@@ -131,3 +123,16 @@ A *WebElement* is a web page element (e.g., input box, button) that Selenium can
 * **JavascriptExecutor**: This interface enables JavaScript code to be ran within a web browser (such as for scrolling, or to handle dynamic events).
 * **TakesScreenshot**: This WebDriver interface can capture screenshots.
 * **TestNG**: This is a testing framework that integrates with Selenium to manage test cases, execute parallel tests, handle assertions, and generate reports.  
+  
+<hr />
+  
+## 7. <a name="alternatives">Test Automation Alternatives</a>
+  
+* Some test automation alternatives to Selenium include:
+  + Cucumber
+  + Cypress
+  + NightwatchJS
+  + Playwright
+  + Puppeteer
+  + TestCafe
+  + QTP/UFT (although Selenium offers open-source, community, cross-platform and multiple programming language support that QTP/UFT does not immediately provide)  
