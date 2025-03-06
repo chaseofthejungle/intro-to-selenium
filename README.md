@@ -137,3 +137,7 @@ A *WebElement* is a web page element (e.g., input box, button) that Selenium can
   + **TestCafe**: Used for building quick JavaScript and TypeScript testing configurations.
   + **QTP/UFT**: Supports VBScript-based test scripts.
     - Selenium offers open-source, community, cross-platform and multiple programming language support that QTP/UFT does not presently provide.
+  
+<hr />
+  
+TODO: Add screenshots.
