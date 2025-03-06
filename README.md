@@ -129,10 +129,11 @@ A *WebElement* is a web page element (e.g., input box, button) that Selenium can
 ## 7. <a name="alternatives">Test Automation Alternatives</a>
   
 * Some test automation alternatives to Selenium include:
-  + Cucumber
-  + Cypress
-  + NightwatchJS
-  + Playwright
-  + Puppeteer
-  + TestCafe
-  + QTP/UFT (although Selenium offers open-source, community, cross-platform and multiple programming language support that QTP/UFT does not immediately provide)  
+  + **Cucumber**: An open-source Ruby-based testing tool for simplified, English-based test case writing.
+  + **Cypress**: Built for complex, contemporary front-end web testing. Intended for JavaScript development.
+  + **NightwatchJS**: A tool for Node.js-based, automated end-to-end web asset testing (including across browsers).
+  + **Playwright**: An open-source Node.js-based framework for automated web testing.
+  + **Puppeteer**: A JavaScript library that performs headless browser testing by default.
+  + **TestCafe**: Used for building quick JavaScript and TypeScript testing configurations.
+  + **QTP/UFT**: Supports VBScript-based test scripts.
+    - Selenium offers open-source, community, cross-platform and multiple programming language support that QTP/UFT does not presently provide.
