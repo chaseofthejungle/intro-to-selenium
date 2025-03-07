@@ -1,6 +1,6 @@
 # Intro to Selenium
   
-**Definition/Overview:** Selenium is an open-source automated web app testing tool/library suite that is compatible with various platforms (including all of the popular contemporary web browsers). Its main components include Selenium IDE, Selenium Grid, and Selenium WebDriver. A previous component, Selenium Remote Control/RC, has been deprecated (in favor of Selenium WebDriver).
+**Definition/Overview:** [Selenium](https://www.selenium.dev/) is an open-source automated web app testing tool/library suite that is compatible with various platforms (including all of the popular contemporary web browsers). Its main components include Selenium IDE, Selenium Grid, and Selenium WebDriver. A previous component, Selenium Remote Control/RC, has been deprecated (in favor of Selenium WebDriver).
   
 #### Table of Contents
 
@@ -129,14 +129,14 @@ A *WebElement* is a web page element (e.g., input box, button) that Selenium can
 ## 7. <a name="alternatives">Test Automation Alternatives</a>
   
 * Some test automation alternatives to Selenium include:
-  + **Cucumber**: An open-source Ruby-based testing tool for simplified, English-based test case writing.
-  + **Cypress**: Built for complex, contemporary front-end web testing. Intended for JavaScript development.
-  + **NightwatchJS**: A tool for Node.js-based, automated end-to-end web asset testing (including across browsers).
-  + **Playwright**: An open-source Node.js-based framework for automated web testing.
-  + **Puppeteer**: A JavaScript library that performs headless browser testing by default.
-  + **TestCafe**: Used for building quick JavaScript and TypeScript testing configurations.
-  + **QTP/UFT**: Supports VBScript-based test scripts.
-    - Selenium offers open-source, community, cross-platform and multiple programming language support that QTP/UFT does not presently provide.
+  + [**Cucumber**](https://cucumber.io/): An open-source Ruby-based testing tool for simplified, English-based test case writing.
+  + [**Cypress**](https://www.cypress.io/): Built for complex, contemporary front-end web testing. Intended for JavaScript development.
+  + [**NightwatchJS**](https://nightwatchjs.org/): A tool for Node.js-based, automated end-to-end web asset testing (including across browsers).
+  + [**Playwright**](https://playwright.dev/): An open-source Node.js-based framework for automated web testing.
+  + [**Puppeteer**](https://pptr.dev/): A JavaScript library that performs headless browser testing by default.
+  + [**TestCafe**](https://testcafe.io/): Used for building quick JavaScript and TypeScript testing configurations.
+  + [**UFT One**](https://admhelp.microfocus.com/uft/en/23.4-24.2/UFT_Help/Content/User_Guide/Ch_UFT_Intro.htm): Supports VBScript-based test scripts.
+    - Selenium offers open-source, community, cross-platform and multiple programming language support that UFT One does not presently provide.
   
 <hr />
   
