@@ -11,6 +11,7 @@
 5. [Exception Handling](#exceptions)
 6. [Other Classes and Interfaces](#others)
 7. [Test Automation Alternatives](#alternatives)
+8. [Supplemental Resource](#supplemental)
   
 <hr />
   
@@ -137,6 +138,12 @@ A *WebElement* is a web page element (e.g., input box, button) that Selenium can
   + [**TestCafe**](https://testcafe.io/): Used for building quick JavaScript and TypeScript testing configurations.
   + [**UFT One**](https://admhelp.microfocus.com/uft/en/23.4-24.2/UFT_Help/Content/User_Guide/Ch_UFT_Intro.htm): Supports VBScript-based test scripts.
     - Selenium offers open-source, community, cross-platform and multiple programming language support that UFT One does not presently provide.
+  
+<hr />
+  
+## 8. <a name="supplemental">Supplemental Resource</a>
+
+[API Testing Overview Guide](https://github.com/chaseofthejungle/api-testing-and-performance-guide)
   
 <hr />
   
