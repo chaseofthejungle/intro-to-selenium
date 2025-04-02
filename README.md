@@ -143,8 +143,8 @@ A *WebElement* is a web page element (e.g., input box, button) that Selenium can
   
 ## 8. <a name="supplemental">Supplemental Resource</a>
 
-[API Testing Overview Guide](https://github.com/chaseofthejungle/api-testing-and-performance-guide)
+* [API Testing Overview Guide](https://github.com/chaseofthejungle/api-testing-and-performance-guide)
   
 <hr />
   
-TODO: Add screenshots.
+TODO: Add Selenium IDE screenshots, organize the WebElement methods section, and add information on installation/setup.
