@@ -11,7 +11,7 @@
 5. [Exception Handling](#exceptions)
 6. [Other Classes and Interfaces](#others)
 7. [Test Automation Alternatives](#alternatives)
-8. [Supplemental Resource](#supplemental)
+8. [Supplemental Resources](#supplemental)
   
 <hr />
   
@@ -141,9 +141,10 @@ A *WebElement* is a web page element (e.g., input box, button) that Selenium can
   
 <hr />
   
-## 8. <a name="supplemental">Supplemental Resource</a>
+## 8. <a name="supplemental">Supplemental Resources</a>
 
-* [API Testing Overview Guide](https://github.com/chaseofthejungle/api-testing-and-performance-guide)
+* *[API Testing Overview Guide](https://github.com/chaseofthejungle/api-testing-and-performance-guide)*
+* *[Official Selenium Website](https://www.selenium.dev/)*
   
 <hr />
   
