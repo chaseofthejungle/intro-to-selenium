@@ -145,6 +145,7 @@ A *WebElement* is a web page element (e.g., input box, button) that Selenium can
 
 * *[API Testing Overview Guide](https://github.com/chaseofthejungle/api-testing-and-performance-guide)*
 * *[Official Selenium Website](https://www.selenium.dev/)*
+* *[Selenium Actions API](https://www.selenium.dev/documentation/webdriver/actions_api/)*
   
 <hr />
   
